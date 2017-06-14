@@ -1,10 +1,7 @@
 // include _header-promo.scss after _header.scss to ensure $header-height and $header-height-sm are referenced
 
-
 $promo-height: 36px;
-
-$promo-close-delay: 0.3s;
-$promo-show-delay: 0.3s;
+$promo-duration: 0.3s;
 
 .header-promo {
   position: relative;
@@ -88,24 +85,24 @@ $promo-show-delay: 0.3s;
 
 .header {
   top: $promo-height * -1;
-  transition: top 0.3s linear, height 0.3s linear;
-  transition-delay: $promo-close-delay;
+  transition: top $promo-duration linear, height $promo-duration linear;
+  transition-delay: $promo-duration;
 }
 
 .show-promo {
   .header {
     top: 0;
-    transition-delay: $promo-show-delay;
+    transition-delay: $promo-duration;
   }
   .header-promo {
     .promo-inner {
       opacity: 1;
-      transition-delay: $promo-close-delay;
+      transition-delay: $promo-duration;
     }
   }
   .header-spacing {
     height: $header-height + $promo-height;
-    transition-delay: $promo-show-delay;
+    transition-delay: $promo-duration;
     @media (max-width: $screen-sm) {
       height: $header-height-sm + $promo-height;
     }
