@@ -89,6 +89,11 @@ $promo-duration: 0.3s;
   transition-delay: $promo-duration;
 }
 
+.header-spacing {
+  transition: height $promo-duration linear;
+  transition-delay: $promo-duration;
+}
+
 .show-promo {
   .header {
     top: 0;
