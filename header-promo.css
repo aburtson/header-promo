@@ -110,6 +110,12 @@
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
+.header-spacing {
+    -webkit-transition: height 0.3s linear;
+    transition: height 0.3s linear;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
 .show-promo .header {
     top: 0;
     -webkit-transition-delay: 0.3s;
