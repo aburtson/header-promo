@@ -1,8 +1,8 @@
-headerPromo();
+promo();
 
-function headerPromo(){
+function promo(){
     var $site = $('.site-constraint');
-    var $close = $('.header-promo .promo-close');
+    var $close = $('.promo__close');
 
     // show promo
     var enabled = true;

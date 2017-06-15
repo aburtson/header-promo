@@ -1,4 +1,4 @@
-.header-promo {
+.promo {
     position: relative;
     background: #333333;
     height: 36px;
@@ -8,11 +8,11 @@
     overflow: hidden;
 }
 @media (max-width: 768px) {
-    .header-promo {
+    .promo {
         text-align: left;
     }
 }
-.header-promo .promo-inner {
+.promo__inner {
     position: absolute;
     top: 50%;
     left: 0;
@@ -26,22 +26,22 @@
     transition: opacity 0.3s linear;
 }
 @media (max-width: 768px) {
-    .header-promo .promo-inner {
+    .promo__inner {
         padding: 10px 70px 10px 40px;
     }
 }
 @media (max-width: 480px) {
-    .header-promo .promo-inner {
+    .promo__inner {
         padding: 10px 60px 10px 30px;
     }
 }
-.header-promo a {
+.promo a {
     display: inline-block;
     font-size: 0.9rem;
     color: #fff;
     cursor: pointer;
 }
-.header-promo a:after {
+.promo a:after {
     content: '';
     display: inline-block;
     width: 0.45rem;
@@ -56,7 +56,7 @@
     -webkit-transition: 0.3s linear;
     transition: 0.3s linear;
 }
-.header-promo .promo-close {
+.promo__close {
     position: absolute;
     top: 50%;
     right: 80px;
@@ -69,17 +69,17 @@
     cursor: pointer;
 }
 @media (max-width: 768px) {
-    .header-promo .promo-close {
+    .promo__close {
         right: 40px;
     }
 }
 @media (max-width: 480px) {
-    .header-promo .promo-close {
+    .promo__close {
         right: 30px;
     }
 }
-.header-promo .promo-close:before,
-.header-promo .promo-close:after {
+.promo-close:before,
+.promo-close:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -93,12 +93,12 @@
     border-radius: 2px;
     background: #fff;
 }
-.header-promo .promo-close:before {
+.promo-close:before {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.header-promo .promo-close:after {
+.promo-close:after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -110,7 +110,7 @@
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
-.header-spacing {
+.header__space {
     -webkit-transition: height 0.3s linear;
     transition: height 0.3s linear;
     -webkit-transition-delay: 0.3s;
@@ -121,18 +121,18 @@
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
-.show-promo .header-promo .promo-inner {
+.show-promo .promo .promo__inner {
     opacity: 1;
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
-.show-promo .header-spacing {
+.show-promo .header__space {
     height: 116px;
     -webkit-transition-delay: 0.3s;
     transition-delay: 0.3s;
 }
 @media (max-width: 768px) {
-    .show-promo .header-spacing {
+    .show-promo .header__space {
         height: 96px;
     }
 }
