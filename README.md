@@ -1,15 +1,15 @@
-#Header promo
+# Header promo
 
 This plugin adds a promo bar above the header.
 
 This can be used to advertise a news article, event, or other important link on the site.
 
-##Dependencies
+## Dependencies
 
 * jQuery
 * Bootstrap
 
-##Getting started
+## Getting started
 
 1. Verify that the jQuery and Bootstrap are included in the project.
 2. Include *promo.js* in your js directory / gulpfile.
